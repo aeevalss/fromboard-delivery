@@ -358,7 +358,7 @@ body {
   }
 
   &__text {
-    font-size: 20px;
+    font-size: 25px;
     padding: 18px 0px;
   }
 
@@ -449,6 +449,20 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
+// Поправки в медиа для отступа картинки
+@media screen and (min-width: 1677px) {
+  .main__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .box__caption {
+    margin-bottom: 30px;
+  }
+
+}
+
 @media screen and (max-width: 1677px) {
   .main-container {
     flex-direction: column;
@@ -459,6 +473,7 @@ input[type="submit"]:hover {
   .main__box {
     margin-bottom: 30px;
     max-width: 100%;
+    display: block;
   }
 
   .calc-container {
@@ -477,6 +492,9 @@ input[type="submit"]:hover {
     min-width: 287px;
   }
 
+  .box__text {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1536px) {
