@@ -771,6 +771,12 @@ input[type="submit"]:hover {
   }
 }
 
+@media screen and (max-width:412px) {
+  .heading__text>span {
+    display: none;
+  }
+}
+
 // ========== ОТЗЫВЫ БЛОК=============================================
 .reviews {
   padding: 0px 5%;

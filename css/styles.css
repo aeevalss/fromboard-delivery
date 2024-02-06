@@ -644,6 +644,11 @@ input[type=submit]:hover {
     padding: 0px 2%;
   }
 }
+@media screen and (max-width: 412px) {
+  .heading__text > span {
+    display: none;
+  }
+}
 .reviews {
   padding: 0px 5%;
   display: flex;
