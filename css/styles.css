@@ -245,6 +245,7 @@ body {
   }
   .navbar {
     padding: 0px;
+    position: relative;
   }
   .navbar__top {
     align-items: center;
@@ -436,6 +437,12 @@ input[type=submit]:hover {
   }
 }
 @media screen and (max-width: 690px) {
+  .advant__boxes {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .box__caption {
     text-align: center;
   }
@@ -459,6 +466,9 @@ input[type=submit]:hover {
   }
   .main {
     padding: 0px 2%;
+  }
+  .box__img {
+    width: 100%;
   }
 }
 .advant {
@@ -540,6 +550,10 @@ input[type=submit]:hover {
 @media screen and (max-width: 758px) {
   .advant {
     padding: 0px 2%;
+  }
+  .inner {
+    width: 70px;
+    height: 70px;
   }
 }
 .garanties {
@@ -883,14 +897,12 @@ textarea:hover::placeholder {
 }
 
 .footer-container {
-  border: 2px solid red;
   max-width: 1536px;
   width: 100%;
   margin: 0px auto;
 }
 
 .footer-top {
-  border: 1px solid orange;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -946,7 +958,6 @@ textarea:hover::placeholder {
   .extra-menu {
     display: flex;
     justify-content: center;
-    border: 2px solid orange;
     margin: 0px 0px 24px 0px;
   }
   .footer__info {
