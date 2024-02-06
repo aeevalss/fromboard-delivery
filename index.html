@@ -198,7 +198,7 @@
   <!-- =======ОТДЕЛЬНАЯ СЕКЦИЯ====== -->
   <div class="reviews">
     <div class="reviews-container">
-      <div class="reviews__caption">Отзывы</div>
+      <h2 class="reviews__caption">Отзывы</h2>
       <!-- Слайдер -->
 
       <div class="slider-wrap">
@@ -262,9 +262,66 @@
       </div>
     </div>
   </div>
-  <footer class="footer">f</footer>
+  <!-- ОТДЕЛЬНАЯ СЕКЦИЯ -->
+  <div class="quest">
+    <div class="quest-container">
+      <div class="quest__form form">
+        <h2 class="form__caption">Остались вопросы?</h2>
+        <div class="form-wrap">
+          <form class="quest__form" action="/action_page.php">
+            <input type="text" id="sname" name="sname" placeholder="Имя" />
+            <input type="semail" id="semail" name="semail" placeholder="Почта" /><br>
+            <input type="tel" id="sphone" name="sphone" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <input type="text" id="theme" name="theme" placeholder="Тема вопроса" /><br>
+            <textarea name="message" id="message" placeholder="Сообщение..."></textarea>
+            <input type="submit" value="Оставить заявку" /> <br />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- For-media -->
+      <ul class="extra-menu">
+        <li class="menu__bot-el"><a href="#">Калькулятор</a></li>
+        <li class="menu__bot-el"><a href="#">О нас</a></li>
+        <li class="menu__bot-el"><a href="#">Гарантии</a></li>
+        <li class="menu__bot-el"><a href="#">Отзывы</a></li>
+      </ul>
+      <div class="footer-top">
+        <div class="footer__logo">
+          <div class="logo-1">
+            <img src="./imgs/logo-f.svg" alt="Логотип">
+            <div class="footer__caption">FromBoard Delivery</div>
+          </div>
+          <div class="logo-2">2023 © Ни одно право не защищено, копируйте сколько влезет</div>
+        </div>
+        <ul class="footer__menu">
+          <li class="menu__bot-el"><a href="#">Калькулятор</a></li>
+          <li class="menu__bot-el"><a href="#">О нас</a></li>
+          <li class="menu__bot-el"><a href="#">Гарантии</a></li>
+          <li class="menu__bot-el"><a href="#">Отзывы</a></li>
+        </ul>
+        <div class="footer__number">
+          <div class="number-1">+7 (800) 123 45-67</div>
+          <div class="number-2">Звонки по России бесплатны</div>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="footer__info">НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то, что цены носят
+          информационный и ознакомительный характер, а значит ни в какой мере не являются публичной офертой, которая
+          определена в ст. 437 ГК РФ. Вся информация на сайте может содержать неточности, орфографические и иные ошибки,
+          она не является полной, окончательно и исчерпывающей</div>
+        <div class="footer__dev">Версткой макета занимался <br>
+          <span>Кравцов Станислав</span>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
-</body>wiper
+</body>
 
 </html>
