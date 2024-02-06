@@ -127,7 +127,6 @@ body {
     text-align: right;
   }
 
-  &__call {}
 }
 
 .value {
@@ -286,7 +285,6 @@ body {
   .navbar__container {
     min-height: 90px;
     padding: 0px 2%;
-    display: none;
   }
 
   .navbar {
@@ -363,7 +361,6 @@ body {
     padding: 18px 0px;
   }
 
-  &__img {}
 
   &__img>img {
     width: 100%;
@@ -1011,7 +1008,6 @@ textarea:hover::placeholder {
   color: #fff;
 
 
-  &__logo {}
 
   &__caption {
     font-size: 24px;
@@ -1024,7 +1020,6 @@ textarea:hover::placeholder {
     display: flex;
   }
 
-  &__number {}
 
   &__info {
     max-width: 910px;
