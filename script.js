@@ -26,3 +26,10 @@ new Swiper('.swiper', {
       }
    }
 });
+
+// Бургер-меню
+$(document).ready(function () {
+   $('.hamburger').click(function () {
+      $('.hamburger__main, .delivery-value-extra, .navbar__bottom').toggleClass('active');
+   });
+});

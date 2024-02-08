@@ -57,6 +57,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   max-width: 1536px;
+  position: relative;
 }
 .navbar__container {
   background-color: #f9fafb;
@@ -155,8 +156,12 @@ body {
   display: none;
 }
 
+.delivery-value-extra.active {
+  display: flex;
+}
+
 .hamburger {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,6 +177,7 @@ body {
   height: 4px;
   width: 24px;
   background: #a78bfa;
+  transition: all 0.3s ease 0s;
 }
 
 .hamburger__main::before {
@@ -181,6 +187,7 @@ body {
   height: 4px;
   width: 24px;
   background: #a78bfa;
+  transition: all 0.3s ease 0s;
 }
 
 .hamburger__main::after {
@@ -190,6 +197,7 @@ body {
   height: 4px;
   width: 24px;
   background: #a78bfa;
+  transition: all 0.3s ease 0s;
 }
 
 .hamburger__main::before {
@@ -198,6 +206,18 @@ body {
 
 .hamburger__main::after {
   transform: translateY(8px);
+}
+
+.hamburger__main.active {
+  transform: rotate(45deg);
+}
+
+.hamburger__main.active::before {
+  transform: rotate(90deg);
+}
+
+.hamburger__main.active::after {
+  transform: scale(0);
 }
 
 @media screen and (max-width: 1677px) {
@@ -246,6 +266,7 @@ body {
   .navbar {
     padding: 0px;
     position: relative;
+    margin-top: 20px;
   }
   .navbar__top {
     align-items: center;
@@ -258,18 +279,60 @@ body {
   }
   .call__numb {
     font-size: 20px;
+    margin-right: 35px;
   }
   .navbar__bottom {
     display: none;
   }
+  .navbar__bottom.active {
+    display: flex;
+  }
   .delivery-value-extra {
     display: none;
+    padding: 18px 0px 0px 0px;
   }
   .hamburger {
     display: flex;
     position: absolute;
-    top: 37px;
+    top: 30px;
     right: 5px;
+  }
+}
+@media (max-width: 582px) {
+  .navbar__container {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .navbar__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .call__numb {
+    padding-top: 5px;
+  }
+  .hamburger {
+    right: 46%;
+    top: 130px;
+  }
+  .navbar__bottom.active {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .navbar-forbtn {
+    padding-top: 25px;
+  }
+  .delivery__call {
+    margin-left: 40px;
+  }
+  .delivery-value-extra.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .delivery-value-extra.active > p:not(:first-child) {
+    padding-top: 10px;
   }
 }
 .main {
